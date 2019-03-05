@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="Lenova-PC" id="0" name="BookControllerTests" package="bookstore" tests="1" time="1.917" timestamp="2013-09-26T07:15:51">
+      <properties />
+
+      <testcase classname="bookstore.BookControllerTests" name="testSomething" time="1.874">
+          <failure message="Assertion failed: &#xa;&#xa;assert &quot;xyz&quot; == response.text&#xa;             |  |        |&#xa;             |  |        book list&#xa;             |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14cf61d&#xa;             false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert &quot;xyz&quot; == response.text
+             |  |        |
+             |  |        book list
+             |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14cf61d
+             false
+
+	at bookstore.BookControllerTests.testSomething(BookControllerTests.groovy:16)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

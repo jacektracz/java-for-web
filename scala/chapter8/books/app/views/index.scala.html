@@ -1,0 +1,32 @@
+
+@(books: List[Book], bookForm: Form[Book])
+
+@import helper._
+
+@main("books") {
+    
+    <h1>@books.size() book(s)</h1>
+    
+    <ul>
+        @for(book <- books) {
+            <li>
+                @book.label
+                
+                @form(routes.Application.deleteBook(book.id)) {
+                    <input type="submit" value="Delete">
+                }
+            </li>
+        }
+    </ul>
+    
+    <h2>Add a new book</h2>
+    
+    @form(routes.Application.newBook()) {
+        
+        @inputText(bookForm("label")) 
+        
+        <input type="submit" value="Create">
+        
+    }
+    
+}

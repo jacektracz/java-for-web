@@ -1,0 +1,29 @@
+Testsuite: bookstore.BookControllerTests
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 1.917 sec
+------------- Standard Output ---------------
+--Output from testSomething--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testSomething--
+------------- ---------------- ---------------
+
+Testcase: testSomething took 1.868 sec
+	FAILED
+Assertion failed: 
+
+assert "xyz" == response.text
+             |  |        |
+             |  |        book list
+             |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14cf61d
+             false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert "xyz" == response.text
+             |  |        |
+             |  |        book list
+             |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14cf61d
+             false
+
+	at bookstore.BookControllerTests.testSomething(BookControllerTests.groovy:16)
+
